@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates an uncommon error related to unexpected behavior with the `:focus-visible` pseudo-class:
+
+```css
+.my-element:focus-visible {
+  outline: 2px solid blue;
+}
+```
+
+This seems straightforward, but it can lead to inconsistencies if the element's default focus behavior is altered by other CSS or JavaScript.  For instance, if `outline: none` is applied elsewhere,  ` :focus-visible` might not function as expected, or its effect may be subtle and difficult to debug.
