@@ -1,0 +1,13 @@
+Several approaches can solve or mitigate this problem.  The most direct involves ensuring that the `:focus-visible` rule has sufficient specificity to override conflicting styles:
+
+```css
+.my-element {
+  outline: none; /* Prevents default outline */
+}
+
+.my-element:focus-visible {
+  outline: 2px solid blue !important; /* Higher specificity to ensure override */
+}
+```
+
+Alternatively, using a more robust focus management technique might be necessary, potentially involving JavaScript to manage the focus styles programmatically for better control and cross-browser consistency.
